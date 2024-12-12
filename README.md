@@ -37,6 +37,8 @@ The app displays four plots:
 ## Citing this work
 If you use our work, please cite it:
 
->Mendonca T, et al. *Broadband rheology of single chromosomes reveals new insights into the mitotic chromosome periphery*. bioRxiv. (2024). 
+>Mendonca T, et al. *Broadband rheology of single chromosomes reveals new insights into the mitotic chromosome periphery*. bioRxiv. (2024).
+
 >Smith, M. G., Gibson, G. M. & Tassieri, M. *i-RheoFT: Fourier transforming sampled functions without artefacts.* Sci Rep 11, 24047 (2021).
+
 >Tassieri, M. et al. *i-Rheo: Measuring the materials’ linear viscoelastic properties “in a step ”!* Journal of Rheology 60, 649–660 (2016).

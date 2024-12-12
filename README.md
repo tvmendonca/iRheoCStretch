@@ -18,6 +18,7 @@ Mendonca, T., et al. *Broadband rheology of single chromosomes reveals new insig
 Briefly, individual chromosomes are captured between optically trapped beads with an optical tweezer instrument (e.g. LUMICKS C-trap) and a stretching force is applied at a rate of 100μm/s. Following this, the optical traps are left stationary and the chromosome response is recorded over 2 minutes. Data from this 2 minute dwell period is input in the iRheo C-Stretch app to generate complex stiffness values.
 
 #### Outputs:
+![App Screenshot](https://github.com/tvmendonca/iRheoCStretch/blob/main/img/FigS2_iRheoCStretch.png)
 The app displays four plots: 
 1. *Input* **Summed Force vs Time** 
 2. *Input* **Extension vs Time** 

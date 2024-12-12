@@ -3,7 +3,7 @@ An app to extract complex viscoelasticity from optical tweezer stretch-strain rh
 
 
 #### Installation:
-Installer for the i-Rheo C-Stretch app can be downloaded from https://github.com/tvmendonca/iRheoCStretch  
+Installer for the i-Rheo C-Stretch app can be downloaded from [https://github.com/tvmendonca/iRheoCStretch/iRheoCStretch_Installer.exe](https://github.com/tvmendonca/iRheoCStretch/blob/main/iRheoCStretch_Installer.exe)  
 The installation includes MATLAB Runtime that enables the standalone and free use of the code without a full installation of MATLAB.
 
 #### Inputs:

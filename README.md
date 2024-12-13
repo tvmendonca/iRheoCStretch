@@ -7,17 +7,16 @@ Mendonca, T., et al. *Broadband rheology of single chromosomes reveals new insig
 Briefly, individual chromosomes are captured between optically trapped beads with an optical tweezer instrument and a stretching force is applied at a rate of 100μm/s. Following this, the optical traps are left stationary and the chromosome response is recorded over 2 minutes. Data from this 2 minute dwell period is input in the iRheo C-Stretch app to generate complex stiffness values. Complex stiffness is defined as the ratio of the Fourier transforms of force F(t), measured as the picoNewton force exerted by the optical traps on the chromosome with time, and strain ε(t), the relative extension of the chromosome in nanometres over time. κ*(ω) is a complex number with real and imaginary parts that describe the elastic κ'(ω) and viscous κ''(ω) components of the chromosome mechanical response.  
 
 #### Installation:
-Installer for the i-Rheo C-Stretch app can be downloaded from [https://github.com/tvmendonca/iRheoCStretch/iRheoCStretch_Installer.exe](https://github.com/tvmendonca/iRheoCStretch/blob/main/iRheoCStretch_Installer.exe)  
-The installation includes MATLAB Runtime that enables the standalone and free use of the code without a full installation of MATLAB.
+Installer for the i-Rheo C-Stretch app can be downloaded from [https://github.com/tvmendonca/iRheoCStretch/iRheoCStretch_Installer.exe](https://github.com/tvmendonca/iRheoCStretch/blob/main/iRheoCStretch_Installer.exe). The installation includes MATLAB Runtime that enables the standalone and free use of the code without a full installation of MATLAB.
 
-#### Useage:
+#### Usage:
 ![App Screenshot](https://github.com/tvmendonca/iRheoCStretch/blob/main/img/FigS2_iRheoCStretch.png)
 
 #### Inputs:
 A 3xn text ('.txt') file of *data recorded at high frequency*  with the following columns: 
-1. time 
-2. summed force at both beads over experiment duration 
-3. change in length of chromosome over duration of experiment <br/>
+1. **Time**
+2. **Summed force at both beads over experiment duration** 
+3. **Change in length of chromosome over duration of experiment** <br/>
 
 #### Outputs:
 The app displays four plots: 
@@ -29,12 +28,12 @@ The app displays four plots:
 *A text file of frequency, k' and k'' can be exported from the app. Plots can be saved as image files.*
 
 #### Parameters to adjust:
--Initial Extension: chromosome extension relative to its original length at time 0 (start of 2 min recording after extension)
--Initial Force: summed force on both beads at time 0
--Gradient of Extension at Infinite Time: gradient in chromosome extension data at infinite time (default value 0)
--Gradient of Force at Infinite Time: gradient in force at infinite time (default value 0)
--Number of Interpolated Points: upsampling data if needed. Higher values can result in noisy data while too low values can result in errors.
--Number of Plotting Points: plotting density for graphs
+-Initial Extension: chromosome extension relative to its original length at time 0 (start of 2 min recording after extension)  
+-Initial Force: summed force on both beads at time 0  
+-Gradient of Extension at Infinite Time: gradient in chromosome extension data at infinite time (default value 0)  
+-Gradient of Force at Infinite Time: gradient in force at infinite time (default value 0)  
+-Number of Interpolated Points: upsampling data if needed. Higher values can result in noisy data while too low values can result in errors.  
+-Number of Plotting Points: plotting density for graphs  
 
 ## Citing this work
 If you use our work, please cite it:

@@ -1,10 +1,17 @@
 # iRheoCStretch
 An app to extract complex viscoelasticity from optical tweezer stretch-strain rheology measurements of chromosomes and other single molecules
 
+A detailed explanation of the stretch-strain rheology method can be found in the publication:  
+Mendonca, T., et al. *Broadband rheology of single chromosomes reveals new insights into the mitotic chromosome periphery*
+
+Briefly, individual chromosomes are captured between optically trapped beads with an optical tweezer instrument and a stretching force is applied at a rate of 100μm/s. Following this, the optical traps are left stationary and the chromosome response is recorded over 2 minutes. Data from this 2 minute dwell period is input in the iRheo C-Stretch app to generate complex stiffness values. Complex stiffness is defined as the ratio of the Fourier transforms of force F(t), measured as the picoNewton force exerted by the optical traps on the chromosome with time, and strain ε(t), the relative extension of the chromosome in nanometres over time. κ*(ω) is a complex number with real and imaginary parts that describe the elastic κ'(ω) and viscous κ''(ω) components of the chromosome mechanical response.  
 
 #### Installation:
 Installer for the i-Rheo C-Stretch app can be downloaded from [https://github.com/tvmendonca/iRheoCStretch/iRheoCStretch_Installer.exe](https://github.com/tvmendonca/iRheoCStretch/blob/main/iRheoCStretch_Installer.exe)  
 The installation includes MATLAB Runtime that enables the standalone and free use of the code without a full installation of MATLAB.
+
+#### Useage:
+![App Screenshot](https://github.com/tvmendonca/iRheoCStretch/blob/main/img/FigS2_iRheoCStretch.png)
 
 #### Inputs:
 A 3xn text ('.txt') file of *data recorded at high frequency*  with the following columns: 
@@ -12,13 +19,7 @@ A 3xn text ('.txt') file of *data recorded at high frequency*  with the followin
 2. summed force at both beads over experiment duration 
 3. change in length of chromosome over duration of experiment <br/>
 
-A detailed explanation of experiment methodology can be found in the publication:
-Mendonca, T., et al. *Broadband rheology of single chromosomes reveals new insights into the mitotic chromosome periphery*
-
-Briefly, individual chromosomes are captured between optically trapped beads with an optical tweezer instrument (e.g. LUMICKS C-trap) and a stretching force is applied at a rate of 100μm/s. Following this, the optical traps are left stationary and the chromosome response is recorded over 2 minutes. Data from this 2 minute dwell period is input in the iRheo C-Stretch app to generate complex stiffness values.
-
 #### Outputs:
-![App Screenshot](https://github.com/tvmendonca/iRheoCStretch/blob/main/img/FigS2_iRheoCStretch.png)
 The app displays four plots: 
 1. *Input* **Summed Force vs Time** 
 2. *Input* **Extension vs Time** 
@@ -38,7 +39,9 @@ The app displays four plots:
 ## Citing this work
 If you use our work, please cite it:
 
->Mendonca T, et al. *Broadband rheology of single chromosomes reveals new insights into the mitotic chromosome periphery*. bioRxiv. (2024).
+[![DOI](https://zenodo.org/badge/902349673.svg)](https://doi.org/10.5281/zenodo.14422787)
+
+Related publications:
 
 >Smith, M. G., Gibson, G. M. & Tassieri, M. *i-RheoFT: Fourier transforming sampled functions without artefacts.* Sci Rep 11, 24047 (2021).
 

@@ -16,7 +16,9 @@ Installer for the i-Rheo C-Stretch app can be downloaded from [https://github.co
 A 3xn text ('.txt') file of *data recorded at high frequency*  with the following columns: 
 1. **Time**
 2. **Summed force at both beads over experiment duration** 
-3. **Change in length of chromosome over duration of experiment** <br/>
+3. **Change in length of chromosome over duration of experiment** <br/>  
+
+MATLAB scripts to generate txt files from h5 data exported from Bluelake (LUMICKS) are here: https://github.com/tvmendonca/iRheoCStretch/tree/main/ExtractData_H5-txt
 
 #### Outputs:
 The app displays four plots: 

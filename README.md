@@ -40,9 +40,10 @@ The app displays four plots:
 ## Citing this work
 If you use our work, please cite it:
 
-[![DOI](https://zenodo.org/badge/902349673.svg)](https://doi.org/10.5281/zenodo.14422787)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14527637.svg)](https://doi.org/10.5281/zenodo.14527637)
 
 Related publications:
+>Mendonca, T. et al. *The mitotic chromosome periphery: a fluid coat that mediates chromosome mechanics.* bioRxiv (2024)  https://doi.org/10.1101/2024.12.21.628209 
 
 >Smith, M. G., Gibson, G. M. & Tassieri, M. *i-RheoFT: Fourier transforming sampled functions without artefacts.* Sci Rep 11, 24047 (2021).
 

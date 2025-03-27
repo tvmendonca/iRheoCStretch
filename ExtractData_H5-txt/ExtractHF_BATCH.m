@@ -1,6 +1,6 @@
 %---------------------
 % Biophysics of human chromosomes
-% Tania Mendonca
+% Tania Mendonca <tania.mendonca@nottingham.ac.uk>
 % Extract high frequency force-time data (Batch process)
 % from .h5 files exported from LUMICKS Blulake
 %---------------------
@@ -96,7 +96,8 @@ for j = 1:length(NData)
     tp1 = bp1.Value + (-lx1*1e-3); tp2 = bp2.Value + (lx2*1e-3);
 
     ftp1 = fit(lt,tp1,'linearinterp'); ftp2 = fit(lt,tp2,'linearinterp');
-    htp1 = ftp1(double(t)); htp2 = ftp2(double(t));
+    warning('off','last');
+    htp1 = ftp1(double(t)); htp2 = ftp2(double(t)); warning('off','last');
     hd = (htp2-(x2*1e-3))-(htp1-(-x1*1e-3))-3;
     
     try
@@ -117,13 +118,13 @@ for j = 1:length(NData)
 %% Concatenate data and write file
     tupend = double(t(tend))+ [1:1:10];
     upendedt = [t(1:tend) tupend];
-    cumf = [abs(hf1(1:tend))+abs(hf2(1:tend)); zeros(10,1)];
+    avgf = [(abs(hf1(1:tend))+abs(hf2(1:tend)))/2; zeros(10,1)];
     extupend = [ext(1:tend); zeros(10,1)];
     
 %     figure
-%     plot(upendedt, cumf);
+%     plot(upendedt, avgf);
 
-    HFdata = [double(upendedt(:))*1e-9, cumf(:), extupend(:)];  % concatenate data
+    HFdata = [double(upendedt(:))*1e-9, avgf(:), extupend(:)];  % concatenate data
 
     writematrix(HFdata,HF_Path); 
 end

@@ -35,7 +35,7 @@ The app displays four plots:
 
 #### Parameters to adjust:
 -Initial Extension: chromosome extension relative to its original length at time 0 (start of 2 min recording after extension -  set to auto)  
--Initial Force: average force on chromosome at time 0  (set to auto)
+-Initial Force: average force on chromosome at time 0 (set to auto)   
 -Gradient of Extension at Infinite Time: gradient in chromosome extension data at infinite time (default value 0)  
 -Gradient of Force at Infinite Time: gradient in force at infinite time (default value 0)  
 -Number of Interpolated Points: upsampling data if needed. Higher values can result in noisy data while too low values can result in errors.  

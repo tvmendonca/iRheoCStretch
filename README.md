@@ -1,4 +1,4 @@
-# iRheoCStretch
+# i-Rheo C-Stretch
 An app to extract complex viscoelasticity from optical tweezer stretch-strain rheology measurements of chromosomes and other single molecules
 
 A detailed explanation of the stretch-strain rheology method can be found in the publication:  

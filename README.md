@@ -2,7 +2,7 @@
 An app to extract complex viscoelasticity from optical tweezer stretch-strain rheology measurements of chromosomes and other single molecules
 
 A detailed explanation of the stretch-strain rheology method can be found in the publication:  
-Mendonca, T., et al. *Broadband rheology of single chromosomes reveals new insights into the mitotic chromosome periphery*
+Mendonca, T., et al. *The mitotic chromosome periphery: a fluid coat that mediates chromosome mechanics*
 
 Briefly, individual chromosomes are captured between optically trapped beads with an optical tweezer instrument and a stretching force is applied at a rate of 100μm/s. Following this, the optical traps are left stationary and the chromosome response is recorded over 2 minutes (until the force decay reaches an asymptote). Data from this 2 minute dwell period is input in the iRheo C-Stretch app to generate complex stiffness values. Complex stiffness is defined as the ratio of the Fourier transforms of force F(t), measured as the picoNewton force exerted by displacing a bead handle on the chromosome with time, and strain ε(t), the relative extension of the chromosome in nanometres over time. κ*(ω) is a complex number with real and imaginary parts that describe the elastic κ'(ω) and viscous κ''(ω) components of the chromosome mechanical response.  
 

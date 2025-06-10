@@ -41,8 +41,8 @@ for j = 1:length(NData)
 
     indexes = reshape(contains({info.Groups.Name}, '/Calibration'),...
         size(info.Groups));
-    %     TrapStiff1 = h5readatt(File,info.Groups(indexes).Groups(1).Groups(1).Name,...
-    %         'kappa (pN/nm)');                     % trap 1 stiffness
+        TrapStiff1 = h5readatt(File,info.Groups(indexes).Groups(1).Groups(1).Name,...
+             'kappa (pN/nm)');                     % trap 1 stiffness
     TrapStiff2 = h5readatt(File,info.Groups(indexes).Groups(1).Groups(4).Name,...
         'kappa (pN/nm)');                           % trap 2 stiffness
 
@@ -118,15 +118,15 @@ for j = 1:length(NData)
     %% Concatenate data and write file
     tupend = double(t(tend))+ [1:1:10];
     upendedt = [t(1:tend) tupend];
-    %     avgf = [(abs(hf1(1:tend))+abs(hf2(1:tend)))/2; zeros(10,1)];
+    avgf = [(abs(hf1(1:tend))+abs(hf2(1:tend)))/2; zeros(10,1)];
     %     beadf1 = [hf1(1:tend); zeros(10,1)];
-    beadf2 = [hf2(1:tend); zeros(10,1)];
+    %     beadf2 = [hf2(1:tend); zeros(10,1)];
     extupend = [ext(1:tend); zeros(10,1)];
 
     %     figure
-    %     plot(upendedt, beadf2);
+    %     plot(upendedt, avgf);
 
-    HFdata = [double(upendedt(:))*1e-9, beadf2(:), extupend(:)];  % concatenate data
+    HFdata = [double(upendedt(:))*1e-9, avgf(:), extupend(:)];  % concatenate data
 
     writematrix(HFdata,HF_Path);
 end

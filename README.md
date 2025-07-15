@@ -2,7 +2,7 @@
 An app to extract complex viscoelasticity from optical tweezer stretch-hold rheology measurements of chromosomes and other single molecules
 
 A detailed explanation of the stretch-hold rheology method can be found in the publication:  
-Mendonca, T., et al. *The mitotic chromosome periphery modulates chromosome mechanics*
+Mendonca, T., et al., *The mitotic chromosome periphery modulates chromosome mechanics*, Nat. Comms (2025) https://doi.org/10.1038/s41467-025-61755-5
 
 Briefly, individual chromosomes are captured between optically trapped beads with an optical tweezer instrument and a stretching force is applied at a rate of 100 μm/s. Following this, the optical traps are left stationary and the chromosome response is recorded over 2 minutes (until the force decay reaches an asymptote). Data from this 2 minute dwell period is input in the iRheo C-Stretch app to generate complex stiffness values. Complex stiffness is defined as the ratio of the Fourier transforms of force F(t), measured as the picoNewton force exerted by displacing a bead handle on the chromosome with time, and strain ε(t), the relative extension of the chromosome in nanometres over time. κ*(ω) is a complex number with real and imaginary parts that describe the elastic κ'(ω) and viscous κ''(ω) components of the chromosome mechanical response.  
 
@@ -47,7 +47,7 @@ If you use our work, please cite it:
 [![DOI](https://zenodo.org/badge/902349673.svg)](https://doi.org/10.5281/zenodo.14422787)
 
 Related publications:
->Mendonca, T. et al. *The mitotic chromosome periphery: a fluid coat that mediates chromosome mechanics.* bioRxiv (2024)  https://doi.org/10.1101/2024.12.21.628209 
+>Mendonca, T. et al. *The mitotic chromosome periphery modulates chromosome mechanics.* Nat Comms 16, 6399 (2025). 
 
 >Smith, M. G., Gibson, G. M. & Tassieri, M. *i-RheoFT: Fourier transforming sampled functions without artefacts.* Sci Rep 11, 24047 (2021).
 
